@@ -1,0 +1,382 @@
+@charset "utf-8";
+* {margin: 0; box-sizing: border-box;}
+ul,ol,li {list-style: none; padding: 0;}
+a {text-decoration: none; color: #000;}
+input {border: none;}
+button {border: none;}
+
+body {background-color: #fff;}
+
+.hide {
+  display: none;
+}
+
+/* Phone */
+.phone {
+  width: 454px;
+  height: 618px;
+  background-image: url(../images/phone.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.phone img {
+  position: absolute;
+  top: 100px;
+  left: 151px;
+  height: 427px;
+}
+
+/* Login-Form */
+.login-wrap {
+  width: 100%;
+  background-color: #fff;
+}
+
+.login-form h1 {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.login-write {
+  text-align: center;
+}
+
+.login-write input {
+  width: 80%;
+  padding: 10px 0 10px 3px;
+  margin-bottom: 7px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.login-write button {
+  width: 80%;
+  margin: 10px 0 25px;
+  padding: 5px 0;
+  background-color: rgba(0, 149, 246, .3);
+  border-radius: 3px;
+  color: #fff;
+}
+
+/* 또는 라인 */
+.login-or {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-or-center {
+  display: inline-block;
+  font-size: 13px;
+  color: #8e8e8e;
+}
+
+.line {
+  display: inline-block;
+  width: 87px;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+/* facebook로그인 */
+.login-facebook {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #385185;
+}
+
+/* 비밀번호 잊으셨나요? */
+.login-forgetpw {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 12px;
+  color: #00376b;
+}
+
+/* 가입하기 */
+.join-us {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #262626;
+}
+
+.join-us p a {
+  margin-left: 5px;
+  font-weight: bold;
+  color: #0095f6;
+}
+
+/* 앱 다운로드 */
+.download-app {
+  margin-bottom: 70px;
+  font-size: 14px;
+  color: #262626;
+  text-align: center;
+}
+
+.download-app p {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.download-app a img {
+  width: auto;
+  height: 33px;
+}
+
+/* 푸터 */
+.footer-wrap .footer-menu {
+  text-align: center;
+}
+
+.footer-wrap .footer-menu2 {
+  margin-bottom: 10px;
+}
+
+.footer-wrap .footer-menu li {
+  display: inline-block;
+  margin-right: 11px;
+}
+
+.footer-wrap .footer-menu li a {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.footer-wrap span {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.footer-wrap .footer-else {
+  text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #fafafa;
+  }
+
+  /* Login-Form */
+  .login-wrap {
+    width: 380px;
+    margin: 150px auto 0;
+    border: 1px solid #dbdbdb;
+  }
+
+  .login-form h1 {
+    padding: 20px 0 50px;
+  }
+
+  .login-write input {
+    width: 75%;
+    padding: 10px 0 10px 8px;
+  }
+
+  .login-write button {
+    width: 75%;
+    padding: 7px 0;
+  }
+
+  /* 또는 라인 */
+  .login-or {
+    margin-bottom: 30px;
+  }
+
+  .line {
+    width: 120px;
+  }
+
+  /* facebook로그인 */
+  .login-facebook {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #385185;
+  }
+
+  /* 비밀번호 잊으셨나요? */
+  .login-forgetpw {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #00376b;
+  }
+
+  /* 가입하기 */
+  .join-us {
+    width: 380px;
+    padding: 20px 0;
+    margin: 10px auto 20px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    font-size: 14px;
+    color: #262626;
+  }
+
+  .join-us p a {
+    margin-left: 5px;
+    font-weight: bold;
+    color: #0095f6;
+  }
+
+  /* 앱 다운로드 */
+  .download-app {
+    margin-bottom: 150px;
+    font-size: 14px;
+    color: #262626;
+    text-align: center;
+  }
+
+  .download-app p {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .download-app a img {
+    width: auto;
+    height: 33px;
+  }
+
+  /* 푸터 */
+  .footer-wrap .footer-menu2 {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .hide {
+    display: block;
+  }
+  
+  .total-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  /* Phone */
+  .phone {
+    position: relative;
+    width: 454px;
+    height: 618px;
+    margin-top: 150px;
+    background-image: url(../images/phone.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .phone img {
+    position: absolute;
+    top: 100px;
+    left: 151px;
+    height: 427px;
+  }
+
+  body {
+    background-color: #fafafa;
+  }
+
+  /* Login-Form */
+  .login-wrap {
+    width: 380px;
+    margin: 150px auto 0;
+    border: 1px solid #dbdbdb;
+  }
+
+  .login-form h1 {
+    padding: 20px 0 50px;
+  }
+
+  .login-write input {
+    width: 75%;
+    padding: 10px 0 10px 8px;
+  }
+
+  .login-write button {
+    width: 75%;
+    padding: 7px 0;
+  }
+
+  /* 또는 라인 */
+  .login-or {
+    margin-bottom: 30px;
+  }
+
+  .line {
+    width: 120px;
+  }
+
+  /* facebook로그인 */
+  .login-facebook {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #385185;
+  }
+
+  /* 비밀번호 잊으셨나요? */
+  .login-forgetpw {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #00376b;
+  }
+
+  /* 가입하기 */
+  .join-us {
+    width: 380px;
+    padding: 20px 0;
+    margin: 10px auto 20px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    font-size: 14px;
+    color: #262626;
+  }
+
+  .join-us p a {
+    margin-left: 5px;
+    font-weight: bold;
+    color: #0095f6;
+  }
+
+  /* 앱 다운로드 */
+  .download-app {
+    margin-bottom: 150px;
+    font-size: 14px;
+    color: #262626;
+    text-align: center;
+  }
+
+  .download-app p {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .download-app a img {
+    width: auto;
+    height: 33px;
+  }
+
+  /* 푸터 */
+  .footer-wrap .footer-menu2 {
+    margin: 5px 0 15px;
+  }
+
+  .footer-wrap .footer-else {
+    padding-bottom: 60px;
+  }
+
+}
