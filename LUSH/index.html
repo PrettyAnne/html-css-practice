@@ -182,34 +182,25 @@
         </div> <!-- header-menu -->
 
         <div class="header-icon">
-          <ul class="icon-box">
-            <li>
-              <button type="button" class="sch" aria-label="검색">
-                <img src="./images/header-icon-search.png" alt="검색하기">
-              </button>
-            </li>
+          <button type="button" class="sch" aria-label="검색">
+            <img src="./images/header-icon-search.png" alt="검색하기">
+          </button>
 
-            <li>
-              <a href="#" class="cart" aria-label="장바구니">
-                <img src="./images/header-icon-cart.png" alt="장바구니">
-            </a>
-          </li>
+          <a href="#" class="cart" aria-label="장바구니">
+            <img src="./images/header-icon-cart.png" alt="장바구니">
+          </a>
 
-          <li>
-            <a href="./login.html" class="mpg">
-              <img src="./images/header-icon-mypage.png" alt="마이페이지">
-            </a>
+          <button type="button" class="mpg" aria-label="마이페이지" onclick="location.href='./login.html'">
+            <img src="./images/header-icon-mypage.png" alt="마이페이지">
+          </button>
+          <div class="mpg-drop">
             <ul>
-              <div class="mpg-drop">
-                  <li><a href="./login.html">로그인</a></li>
-                  <li><a href="#">회원가입</a></li>
-                  <li><a href="#">스카우트</a></li>
-                  <li><a href="#">고객센터</a></li>
-              </div> <!-- mpg-drop -->
+              <li><a href="./login.html">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">스카우트</a></li>
+              <li><a href="#">고객센터</a></li>
             </ul>
-          </li>
-
-        </ul>
+          </div><!-- mpg-drop -->
         </div> <!-- header-icon -->
       </nav>
     </div> <!-- header-wrap -->
@@ -219,22 +210,22 @@
     <article>
       <h3>메인 광고 배너</h3>
       <div class="main-banner">
-        <div class="main-slide1">
+        <div class="main-slide main-slide1">
           <a href="#"></a>
         </div>
-        <div class="hide main-slide2">
+        <div class="hide main-slide main-slide2">
           <a href="#"></a>
         </div>
-        <div class="hide main-slide3">
+        <div class="hide main-slide main-slide3">
           <a href="#"></a>
         </div>
-        <div class="hide main-slide4">
+        <div class="hide main-slide main-slide4">
           <a href="#"></a>
         </div>
-        <div class="hide main-slide5">
+        <div class="hide main-slide main-slide5">
           <a href="#"></a>
         </div>
-        <div class="hide main-slide6">
+        <div class="hide main-slide main-slide6">
           <a href="#"></a>
         </div>
       </div> <!-- main-banner -->
@@ -410,5 +401,6 @@
       </div> <!-- footer-right -->
     </div> <!-- footer-wrap -->
   </footer>
+
 </body>
 </html>

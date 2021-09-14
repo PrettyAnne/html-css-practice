@@ -209,14 +209,6 @@ nav::after {
   right: 36px;
 }
 
-.mpg-drop li {
-  display: block;
-}
-
-.icon-box li {
-  display: inline-block;
-}
-
 .header-wrap .header-icon .mpg-drop::before {
   content: '';
   display: block;
@@ -231,7 +223,7 @@ nav::after {
   right: 9px;
 }
 
-.mpg:hover .mpg-drop {
+.header-icon .mpg:hover .mpg-drop {
   display: block;
 }
 
