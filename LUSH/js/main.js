@@ -41,3 +41,13 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 3000); 
 }
+
+/* 검색메뉴 open */
+function openNav() {
+  document.getElementById('myNav').style.height = '100%';
+}
+
+/* 검색메뉴 close */
+function closeNav() {
+  document.getElementById('myNav').style.height = '0%';
+}

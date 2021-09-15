@@ -243,6 +243,27 @@ nav::after {
   display: block;
 }
 
+/* 검색창 */
+.sch:focus .overlay {
+  display: block;
+}
+
+.overlay {
+  display: none;
+  padding: 100px;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.closebtn {
+  color: #fff;
+  font-size: 60px;
+}
+
+.overlay-content ul li a {
+  color: #fff;
+}
+
 /* 메인 배너 */
 .main-banner {
   position: relative;
