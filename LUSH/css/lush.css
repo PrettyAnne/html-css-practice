@@ -273,22 +273,14 @@ nav::after {
   text-decoration: underline;
 }
 
-#keywordslide div {
+.overlay-content ul li {
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
-#keywordslide div a {
-  font-size: 20px;
+.overlay-content ul li a {
   color: #fff;
 }
-
-/* .overlay-content ul {
-  font-size: 20px;
-}
-
-.overlay-content ul li {
-  margin-bottom: 10px;
-} */
 
 .closebtn {
   position: absolute;
@@ -308,13 +300,9 @@ nav::after {
 }
 
 #searchbox:focus {
-  border: none;
   color: #fff;
 }
 
-/* .overlay-content ul li a {
-  color: #fff;
-} */
 
 /* 메인 배너 */
 .main-banner {

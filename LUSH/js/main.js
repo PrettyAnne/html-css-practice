@@ -51,3 +51,13 @@ function openNav() {
 function closeNav() {
   document.getElementById('myNav').style.display = 'none';
 }
+
+// var closeBtn = document.getElementsByClassName('closebtn');
+
+// function closeNav(){
+// closeBtn.addEventListener('click',function(){
+//   document.getElementById('myNav').style.display = 'none';
+// });
+// }
+
+// closeNav();

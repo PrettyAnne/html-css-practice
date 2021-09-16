@@ -5,16 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>러쉬코리아(LUSH KOREA)</title>
+  <!-- 웹폰트 -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato|Open+Sans" type="text/css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" type="text/css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" type="text/css">
+  <!-- css -->
   <link rel="stylesheet" href="./css/lush.css">
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
   <header>
@@ -193,7 +189,8 @@
 
             <!-- 검색 (button) 클릭하면 나오는 화면 -->
             <div class="overlay" id="myNav">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- 닫힘 버튼 -->
+              <!-- 닫힘 버튼 -->
+              <a href="javascript:closeNav()" class="closebtn">&times;</a>
 
               <div class="overlay-content">
                 <form action="#" method="">
@@ -203,17 +200,17 @@
                   <input type="image" id="searchbtn" src="./images/btn_topsearch_search.png">
                 </form>
                 <P>지금 가장 많이 찾아요!</P>
-                <div id="keywordslide">
-                  <div><a href="#">#퍼퓸</a></div>
-                  <div><a href="#">#보디 스프레이</a></div>
-                  <div><a href="#">#기프트</a></div>
-                  <div><a href="#">#프레시 마스크</a></div>
-                  <div><a href="#">#입욕제</a></div>
-                  <div><a href="#">#더티</a></div>
-                </div>
-              </div>
+                <ul>
+                  <li><a href="#">#퍼퓸</a></li>
+                  <li><a href="#">#보디 스프레이</a></li>
+                  <li><a href="#">#기프트</a></li>
+                  <li><a href="#">#프레시 마스크</a></li>
+                  <li><a href="#">#입욕제</a></li>
+                  <li><a href="#">#더티</a></li>
+                </ul>
+              </div> <!-- overlay-content -->
 
-            </div>
+            </div> <!-- overlay -->
 
           </button>
 
@@ -449,24 +446,5 @@
   </footer>
 
   <script src="./js/main.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script>
-    /* 검색창 키워드 슬라이드 */
-    $(document).ready(function(){
-      $("#keywordslide").slick({
-        vertical: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: false,
-        verticalSwiping: true
-      });
-    });
-
-    function closeNav(){
-      document.getElementById('myNav').style.display = 'none';
-    }
-  </script>
 </body>
 </html>
