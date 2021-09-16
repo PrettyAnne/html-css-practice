@@ -250,10 +250,6 @@ nav::after {
 }
 
 /* 검색창 */
-.sch:focus .overlay {
-  display: block;
-}
-
 .overlay {
   position: fixed;
   top: 0;
@@ -277,13 +273,22 @@ nav::after {
   text-decoration: underline;
 }
 
-.overlay-content ul {
+#keywordslide div {
+  margin-bottom: 10px;
+}
+
+#keywordslide div a {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* .overlay-content ul {
   font-size: 20px;
 }
 
 .overlay-content ul li {
   margin-bottom: 10px;
-}
+} */
 
 .closebtn {
   position: absolute;
@@ -301,13 +306,15 @@ nav::after {
   font-size: 25px;
   text-align: center;
 }
+
 #searchbox:focus {
+  border: none;
   color: #fff;
 }
 
-.overlay-content ul li a {
+/* .overlay-content ul li a {
   color: #fff;
-}
+} */
 
 /* 메인 배너 */
 .main-banner {
