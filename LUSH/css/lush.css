@@ -269,6 +269,22 @@ nav::after {
   cursor: default;
 }
 
+.overlay-content p {
+  display: block;
+  margin: 20px 0;
+  font-size: 30px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.overlay-content ul {
+  font-size: 20px;
+}
+
+.overlay-content ul li {
+  margin-bottom: 10px;
+}
+
 .closebtn {
   position: absolute;
   top: 0;
@@ -278,6 +294,7 @@ nav::after {
 }
 
 #searchbox {
+  padding: 10px 0;
   border: none;
   border-bottom: 1px solid #fff;
   background-color: transparent;
