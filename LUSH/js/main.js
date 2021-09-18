@@ -61,3 +61,15 @@ function closeNav() {
 // }
 
 // closeNav();
+
+// $(document).ready(function(){
+
+//   $(".sch").click(function(){
+//     $("#myNav").show();
+//   });
+
+//   $(".closebtn").click(function(){
+//     $("#myNav").hide();
+//   });
+
+// });

@@ -265,6 +265,11 @@ nav::after {
   cursor: default;
 }
 
+.overlay-content {
+  height: 100%;
+
+}
+
 .overlay-content p {
   display: block;
   margin: 20px 0;
@@ -288,6 +293,8 @@ nav::after {
   right: 20px;
   color: #fff;
   font-size: 60px;
+  background-color: transparent;
+  border: none;
 }
 
 #searchbox {

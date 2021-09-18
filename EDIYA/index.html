@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDIYA</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    ul,li,ol {list-style: none;}
+    a {text-decoration: none; color: #000;}
+    body {background-color: powderblue;}
+
+    .headerWrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 70px;
+      padding: 20px 40px;
+      background-color: #fff;
+    }
+
+    .headerWrap .headerMenu .headerMenu-1step > li {
+      display: inline-block;
+      margin-right: 80px;
+    }
+
+    .headerWrap .headerMenu .headerMenu-1step > li:last-child {
+      margin-right: 0;
+    }
+
+    .headerWrap .headerMenu .headerMenu-2step {
+      display: none;
+      width: 150px;
+      position: absolute;
+      top: 70px;
+      z-index: 1;
+    }
+
+    .headerWrap .headerMenu .headerMenu-2step li {
+      margin-bottom: 10px;
+    }
+
+    .headerWrap .headerMenu .headerMenu-2step li a {
+      font-size: 13px;
+      color: #848484;
+    }
+
+    .headerMenu::after {
+      content: '';
+      display: none;
+      clear: both;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      height: 300px;
+      background-color: #fff;
+      border-bottom: 2px solid #000;
+    }
+
+    .headerWrap .headerMenu .headerMenu-1step li:hover .headerMenu-2step {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="headerWrap">
+
+      <div class="headerLogo">
+        <h1>
+          <a href="./index.html">
+            <img src="./top_logo.gif" alt="이디야 메인로고">
+          </a>
+        </h1>
+      </div> <!-- headerMenu-logo -->
+
+      <div class="headerMenu">
+        <ul class="headerMenu-1step">
+          <li>
+            <a href="#">메뉴</a>
+            <div class="headerMenu-2step on">
+              <ul>
+                <li><a href="#">음료</a></li>
+                <li><a href="#">베이커리</a></li>
+                <li><a href="#">이디야 스낵</a></li>
+                <li><a href="#">MD</a></li>
+                <li><a href="#">비니스트</a></li>
+                <li><a href="#">이디야 캡슐 커피</a></li>
+                <li><a href="#">원두</a></li>
+              </ul> 
+            </div> <!-- 2단메뉴 -->
+          </li>
+
+          <li>
+            <a href="#">이디야멤버스</a>
+            <div class="headerMenu-2step on">
+              <ul>
+                <li><a href="#">멤버스 소개</a></li>
+                <li><a href="#">이디야카드</a></li>
+                <li><a href="#">선물하기</a></li>
+                <li><a href="#">이디야오더</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <a href="#">기프트카드</a>
+            <div class="headerMenu-2step on">
+              <ul>
+                <li><a href="#">기프트카드 소개</a></li>
+                <li><a href="#">잔액 조회</a></li>
+                <li><a href="#">분실신고/환불신청</a></li>
+                <li><a href="#">자주하는 질문</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <a href="#">이디야커피랩</a>
+            <div class="headerMenu-2step on">
+              <ul>
+                <li><a href="#">이디야커피랩</a></li>
+                <li><a href="#">이디야커피랩 메뉴</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <a href="#">이디야컬쳐랩</a>
+            <div class="headerMenu-2step on">
+              <ul>
+                <li><a href="#">뮤직페스타</a></li>
+                <li><a href="#">프로그램 및 시설 안내</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <a href="#">이디야 소식</a>
+            <div class="headerMenu-2step on">
+              <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">홈카페 레시피</a></li>
+                <li><a href="#">이디야 유튜브</a></li>
+                <li><a href="#">이디야 블로그</a></li>
+                <li><a href="#">이디야 인스타그램</a></li>
+                <li><a href="#">이디야 페이스북</a></li>
+              </ul>
+            </div>
+          </li>
+
+        </ul> <!-- headerMenu-1step -->
+      </div> <!-- headerMenu-wrap -->
+
+    </nav>
+  </header>
+</body>
+</html>
