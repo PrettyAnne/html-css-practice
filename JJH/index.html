@@ -1,223 +1,217 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>정정화!!</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="./css/custom.css" />
-    <style>
-      /*
-      .bg-red {
-        background-color: beige;
-      }
-      .bg-green {
-        background-color: darkorange;
-      }
-      */
-    </style>
-  </head>
-  <body>
-    <!-- header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">PORTFOLIO</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                SERVICE
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">PORTFOLIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
-    <!-- bannder -->
-    <div class="banner">
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col text-center text-white my-auto">
-            <h2>Welcome To Our Studio</h2>
-            <h1 class="display-2 mt-3">IT`s NICE TO MEET YOU</h1>
-            <button class="btn btn-warning text-white mt-4">
-              TELL ME MORE
-            </button>
-          </div>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>정정화 Portfolio</title>
+  <meta name="description" content="프론트엔드 개발자 정정화의 포트폴리오 사이트 입니다." />
+  <meta name="keywords" content="프론트엔드 포트폴리오, 정정화 포트폴리오" />
+  <meta name="author" content="정정화" />
+  <!-- favicon -->
+  <link rel="icon" type="image/jpg" href="./images/favicon.jpg" />
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/249a85413e.js" crossorigin="anonymous"></script>
+  <!-- webfont -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- script -->
+  <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="navbar_logo">
+      <i class="fas fa-air-freshener"></i>
+      <a href="#">Junghwa</a>
+    </div>
+    <div class="navbar_container">
+      <ul class="navbar_menu">
+        <li class="navbar_menu_item active" data-link="#home">Home</li>
+        <li class="navbar_menu_item" data-link="#about">About</li>
+        <li class="navbar_menu_item" data-link="#skills">Skills</li>
+        <!-- <li class="navbar_menu_item" data-link="#testimonial">testimonial</li> -->
+        <li class="navbar_menu_item" data-link="#contact">Contact</li>
+      </ul>
     </div>
 
-    <!-- section -->
-    <div class="section">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col text-center">
-            <h3>SERVICE</h3>
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
+    <!-- Toggle button -->
+    <button class="navbar_toggle-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- Home -->
+  <section id="home" class="section">
+    <div class="home_container">
+      <img src="./images/mainMe.jpg" alt="Junghwa's photo" class="home_avatar" />
+      <h1 class="home_title">Hello,<br />I'm Junghwa</h1>
+      <h2 class="home_description">Front-End Developer</h2>
+      <button class="home_contact">Contact Me</button>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section section_container">
+    <h1>🙋🏻‍♀️About me</h1>
+    <p>저의 Github와 Tech blog 입니다. 😊</p>
+    <div class="about_majors">
+      <div class="major">
+        <div class="major_icon">
+          <a href="https://github.com/PrettyAnne" target="_blank">
+            <i class="fab fa-github-square"></i>
+          </a>
         </div>
-        <div class="row">
-          <div class="col-md-4 text-center mt-3">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-warning"></i>
-              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="my-3">E-Commerce</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Explicabo temporibus magnam deleniti.
-            </p>
-          </div>
-
-          <div class="col-md-4 text-center">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-warning"></i>
-              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="my-3">E-Commerce</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Explicabo temporibus magnam deleniti.
-            </p>
-          </div>
-
-          <div class="col text-center">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-warning"></i>
-              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="my-3">E-Commerce</h4>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Explicabo temporibus magnam deleniti.
-            </p>
-          </div>
+        <h2 class="major_title">Github</h2>
+        <div class="major_description">
+          Welcome my github
         </div>
       </div>
-    </div>
-
-    <!-- section -->
-    <div class="section">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col text-center">
-            <h3>PORTFOLIO</h3>
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
+      <div class="major">
+        <div class="major_icon">
+          <a href="https://velog.io/@myanne" target="_blank">
+            <i class="fab fa-blogger"></i>
+          </a>
         </div>
-        <div class="row">
-          <div class="col text-center mt-3">
-            <img
-              src="https://cdn.pixabay.com/photo/2016/01/09/18/28/notepad-1130743_960_720.jpg"
-              alt="샘플 이미지"
-            />
-            <h4 class="my-3">Threads</h4>
-            <p class="text-muted">Illustration</p>
-          </div>
-          <div class="col text-center mt-3">
-            <img
-              src="https://cdn.pixabay.com/photo/2016/01/09/18/28/notepad-1130743_960_720.jpg"
-              alt="샘플 이미지"
-            />
-            <h4 class="my-3">Threads</h4>
-            <p class="text-muted">Illustration</p>
-          </div>
-          <div class="col text-center mt-3">
-            <img
-              src="https://cdn.pixabay.com/photo/2016/01/09/18/28/notepad-1130743_960_720.jpg"
-              alt="샘플 이미지"
-            />
-            <h4 class="my-3">Threads</h4>
-            <p class="text-muted">Illustration</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col text-center mt-3">
-            <img
-              src="https://cdn.pixabay.com/photo/2016/01/09/18/28/notepad-1130743_960_720.jpg"
-              alt="샘플 이미지"
-            />
-            <h4 class="my-3">Threads</h4>
-            <p class="text-muted">Illustration</p>
-          </div>
-          <div class="col text-center mt-3">
-            <img
-              src="https://cdn.pixabay.com/photo/2016/01/09/18/28/notepad-1130743_960_720.jpg"
-              alt="샘플 이미지"
-            />
-            <h4 class="my-3">Threads</h4>
-            <p class="text-muted">Illustration</p>
-          </div>
-          <div class="col text-center mt-3">
-            <img
-              src="https://cdn.pixabay.com/photo/2016/01/09/18/28/notepad-1130743_960_720.jpg"
-              alt="샘플 이미지"
-            />
-            <h4 class="my-3">Threads</h4>
-            <p class="text-muted">Illustration</p>
-          </div>
+        <h2 class="major_title">Tech Blog</h2>
+        <div class="major_description">
+          Welcome my tech blog
         </div>
       </div>
-    </div>
 
-    <!-- section -->
-    <div class="section">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col text-center">
-            <h3>CONTACT</h3>
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <!-- about_majors -->
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="section_container">
+      <h1>📕Skills</h1>
+      <h2>SKills & Attributes</h2>
+      <p>새로운 Skill을 얻는 것은 즐거워요😘</p>
+      <div class="skillset">
+        <div class="skillset_left">
+          <h3 class="skillset_title">SKills</h3>
+          <div class="skill">
+            <div class="skill_description">
+              <span>HTML</span>
+              <span>90%</span>
+            </div>
+            <div class="skill_bar">
+              <div class="skill_value" style="width: 90%"></div>
+            </div>
+          </div>
+          <!-- skill -->
+          <div class="skill">
+            <div class="skill_description">
+              <span>CSS</span>
+              <span>90%</span>
+            </div>
+            <div class="skill_bar">
+              <div class="skill_value" style="width: 90%"></div>
+            </div>
+          </div>
+          <!-- skill -->
+          <div class="skill">
+            <div class="skill_description">
+              <span>JavaScript</span>
+              <span>60%</span>
+            </div>
+            <div class="skill_bar">
+              <div class="skill_value" style="width: 60%"></div>
+            </div>
+          </div>
+          <!-- skill -->
+          <div class="skill">
+            <div class="skill_description">
+              <span>React</span>
+              <span>50%</span>
+            </div>
+            <div class="skill_bar">
+              <div class="skill_value" style="width: 50%"></div>
+            </div>
+          </div>
+          <!-- skill -->
+          <div class="skill">
+            <div class="skill_description">
+              <span>Node.js</span>
+              <span>50%</span>
+            </div>
+            <div class="skill_bar">
+              <div class="skill_value" style="width: 50%"></div>
+            </div>
+          </div>
+          <!-- skill -->
+        </div>
+        <!-- skillset_left -->
+        <div class="skillset_right">
+          <div class="tools">
+            <h3 class="skillset_title">Tools</h3>
+            <ul class="tools_list">
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Bracket</span></li>
+              <li><span>Figma</span></li>
+              <li><span>Photoshop</span></li>
+              <li><span>Illastraion</span></li>
+            </ul>
+          </div>
+          <div class="etc">
+            <h3 class="skillset_title">Etc</h3>
+            <ul class="etc_list">
+              <li><span>Git</span></li>
+            </ul>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <input type="text" class="form-control mb-3" />
-            <input type="text" class="form-control mb-3" />
-            <input type="text" class="form-control" />
-          </div>
-          <div class="col">
-            <textarea class="form-control h-100"></textarea>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col text-center">
-            <button class="btn btn-warning btn-lg text-white">
-              TELL ME MORE
-            </button>
-          </div>
-        </div>
+        <!-- skillset_right -->
       </div>
     </div>
+  </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Work -->
+  <section id="work" class="section">
+    <h1>💻 My Work</h1>
+    <h3>저의 Project 입니다. 😊</h3>
+    <div class="work_categories">
+      <button class="category_btn active">
+        All
+        <span class="category_count">1</span>
+      </button>
+    </div>
+
+    <div class="work_projects">
+      <a href="https://github.com/PrettyAnne/React-Project" target="_blank" class="project">
+        <img src="./images/youtube.png" alt="LUSH React.ver" class="project_img" />
+        <div class="project_description">
+          <h3>LUSH Site</h3>
+          <span>Clone coding with React</span>
+        </div>
+      </a>
+    </div>
+    <div class="section_container"></div>
+  </section>
+
+  <!-- Testinomials -->
+  <!-- <section id="testimonials" class="section"></section> -->
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h1 class="contact_title">Contact Me</h1>
+    <h2 class="contact_email">
+      <a href="mailto:wjdghk0118@gmail.com"><i class="far fa-envelope"> Click</i></a>
+    </h2>
+    </div>
+    <p class="contact_rights">2021 Junghwa - All rights reserved</p>
+  </section>
+
+  <!-- Arrow up -->
+  <button class="arrow-up">
+    <i class="fas fa-arrow-alt-circle-up"></i>
+  </button>
+</body>
+
 </html>
